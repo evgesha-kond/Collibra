@@ -1,0 +1,4 @@
+@import url(../libs/normalize.css/normalize.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
