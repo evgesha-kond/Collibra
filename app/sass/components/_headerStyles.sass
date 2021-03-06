@@ -3,25 +3,24 @@
 .header
   display: flex
   position: relative
-  background-color: $main-color
   color: white
 
 
   &__image
     position: absolute
     top: 88px
-    left: 872px
+    right: 0
     max-width: 568px
     width: 100%
     height: 701px
 
   &__p
     margin-top: 55px
-    margin-bottom: 108px
     padding-left: 48px
 
   &__wrapper
-    padding: 200px 0 48px 136px
+    background-color: $main-color
+    flex-grow: 2
 
 
   &__title
@@ -34,6 +33,26 @@
     font-size: 69px
 
 .forrester-container
+  bottom: 0
+  left: 0
+  padding-top: 48px
+  padding-bottom: 48px
   display: flex
   background-color: #032736
   width: 100%
+
+  p
+    margin: 6px 0 6px
+    font-family: $h-font
+    font-size: 17px
+
+.forrester-link
+  margin-left: 173px
+  font-size: 12px
+  align-self: center
+
+  a:link, a:visited
+    color: white
+
+.description-container
+  margin: 200px 0 108px

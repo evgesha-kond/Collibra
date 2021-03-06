@@ -2,6 +2,11 @@
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0; }
+
 body {
   max-width: 1440px;
   width: 100%;
@@ -12,27 +17,32 @@ body {
   font-size: 18px;
   line-height: 27px; }
 
+.a {
+  font-family: "Gothic A1", sans-serif; }
+
 .header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  background-color: #002B40;
   color: white; }
   .header__image {
     position: absolute;
     top: 88px;
-    left: 872px;
+    right: 0;
     max-width: 568px;
     width: 100%;
     height: 701px; }
   .header__p {
     margin-top: 55px;
-    margin-bottom: 108px;
     padding-left: 48px; }
   .header__wrapper {
-    padding: 200px 0 48px 136px; }
+    background-color: #002B40;
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .header__title {
     font-family: "Gothic A1", sans-serif;
     font-size: 68px;
@@ -42,12 +52,31 @@ body {
     font-size: 69px; }
 
 .forrester-container {
+  bottom: 0;
+  left: 0;
+  padding: 48px 0 48px 136px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   background-color: #032736;
   width: 100%; }
+  .forrester-container p {
+    margin: 6px 0 6px;
+    font-family: "Gothic A1", sans-serif;
+    font-size: 17px; }
+
+.forrester-link {
+  margin-left: 173px;
+  font-size: 12px;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
+  .forrester-link a:link, .forrester-link a:visited {
+    color: white; }
+
+.description-container {
+  margin: 200px 0 108px 136px; }
 
 * {
   -webkit-box-sizing: border-box;
