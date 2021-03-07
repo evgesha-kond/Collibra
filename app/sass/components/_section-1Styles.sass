@@ -1,0 +1,60 @@
+@import "../constants"
+
+.section-1
+  color: $main-color
+
+.man-wrapper
+  margin-top: 259px
+  display: flex
+
+.man-image
+  max-width: 662px
+  width: 100%
+  max-height: 462px
+
+.man-description
+  +flex(column, center, strech)
+  margin-left: 90px
+  margin-right: 163px
+
+  p
+    margin-top: 29px
+    margin-bottom: 29px
+
+
+  &__title
+    margin-top: 15px
+
+.live-link
+  font-size: 12px
+
+  a:link, a:visited
+    color: #5E7177
+
+.enable-data
+  padding: 9px 11px 12px
+  background-color: #EFF2F3
+  width: 156px
+
+.trust-container
+  +flex(column, strech, strech)
+  margin-top: 112px
+
+.trust-title
+  margin-top: 23px
+
+.trust-links-list
+  +flex(row, space-between, strech)
+  margin-top: 104px
+  margin-right: 271px
+
+.trust-links-item
+  display: flex
+  margin-bottom: 82px
+
+  .image-container
+    margin-top: -20px
+
+.trust-text-container
+  h4
+    font-size: 17px
