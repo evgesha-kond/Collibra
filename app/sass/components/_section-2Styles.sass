@@ -1,0 +1,89 @@
+@import "../constants"
+
+.data-platform
+  display: flex
+  flex-wrap: wrap
+  background-color: $main-color
+  color: white
+
+  &__text-container
+    margin-top: 193px
+    margin-bottom: 315px
+    max-width: 424px
+    width: 100%
+
+    h3
+      font-size: 59px
+
+    a:link, a:visited
+      color: white
+
+  &__screen-container
+    display: flex
+    margin-bottom: -216px
+    margin-right: 126px
+
+  &__screen-list
+    padding-top: 62px
+    background-color: $dark-green-color
+    font-size: 20px
+
+    .screen-list-header
+      margin-left: 56px
+      margin-bottom: 19px
+
+  &__screen-item
+    +flex(row, strech, center)
+    display: flex
+    padding-left: 56px
+    padding-top: 15px
+    padding-bottom: 17px
+    font-size: 16px
+
+    .screen-list-item
+      margin-left: 16px
+
+  &-screen
+    padding: 62px 106px 51px
+    background-color: #DFE6E8
+    color: $main-color
+
+    .screen-header
+      font-size: 23px
+
+    .screen-image-container
+      margin-top: 66px
+
+.current
+  background-color: #005D4C
+
+.cards-list
+  padding-top: 216px
+  background-color: #EFF2F3
+
+.cards-container
+  padding: 160px 136px 117px
+  +flex(row, space-between, strech)
+
+.cards-item
+  background-color: white
+  padding: 32px 32px 17px
+  max-width: 349px
+  width: 100%
+
+.cards-header-container
+  display: flex
+  font-size: 33px
+  color: $dark-green-color
+
+  h3
+    margin-left: 10px
+
+.cards-text-container
+  margin-left: 10px
+  margin-top: 30px
+  color: $main-color
+
+.link-container
+  margin-top: auto
+
